@@ -1,0 +1,63 @@
+//toutes les pages
+@font-face {
+        font-family: Tekton;
+        src: url("./fonts/TektonPro-Regular.otf");
+        font-weight: bolder;
+        font-stretch: extra-condensed;
+}
+
+h2{
+    font-family: Tekton,Helvetica;
+    font-weight: bold;
+}
+
+h1{
+    font-family:Tekton, Helvetica;
+    font-weight: bold;
+}
+
+.conteneur-galerie-image{
+padding-top:30px;
+margin:0 auto;
+width:100%;
+height:auto;
+overflow:auto; //garde le footer en bas
+}
+
+.scrollbar{
+width:30%;
+height:300px;
+float:left;
+overflow: auto; //le scrollbar n'apparait que si il y a trop d'images
+}
+.droite-galerie-image{
+width:70%;
+height:auto;
+float:right;
+text-align:center;
+padding-right: 10%; //écart 10% du bloc par rapport à la droite
+}
+.droite-galerie-image img{
+width:100%;
+height:auto;
+background:#fc320a;
+padding:5px; // écart par rapport au cadre "droite-galerie-image"
+overflow:auto;
+}
+.miniature-galerie-image{
+list-style-type:none; //enlève les bullet points
+padding:0; //aligné avec le menu
+}
+.miniature-galerie-image li{
+display:inline; //permet d'avoir plusieurs images par ligne dans le scroll
+}
+.miniature-galerie-image li img{
+width:80px;
+height:80px;
+background:#ffeb8c;
+padding:5px;
+margin:2px;
+}
+.miniature-galerie-image li img:hover{
+background:#ffac8c; //background change de couleur quand on passe dessus
+}
